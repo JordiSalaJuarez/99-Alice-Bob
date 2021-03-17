@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+    Bob should play in a smart way to trick Alice into winning
+
+"""
+
 from random import choice
 
 x = int(input())
