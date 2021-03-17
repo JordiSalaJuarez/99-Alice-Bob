@@ -12,8 +12,8 @@ from random import choice
 
 with Popen([sys.executable, '-u', 'bob.py'], stdin=PIPE, stdout=PIPE,
         universal_newlines=True, bufsize=1) as cat:
-    print("1", file=cat.stdin, flush=True)
-    print("Alice 1")
+    print("0", file=cat.stdin, flush=True)
+    print("Alice 0")
     while True:
         x = int(cat.stdout.readline())
         print(f"Bob {x}")
